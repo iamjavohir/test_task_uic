@@ -3,15 +3,16 @@
 # ===============================
 
 # 1. Loyihaga kirish
-cd /path/to/your/project   # o'z loyihang papkasiga kirish
+cd /path/to/your/project   
 
 # 2. Virtual environment yaratish va aktivlashtirish
 python3 -m venv .venv
 source .venv/bin/activate   
-# Windowsda: .venv\Scripts\activate
+
+# Windowsda: 
+.venv\Scripts\activate
 
 # 3. Pip yangilash va dependencies o‘rnatish
--pip install --upgrade pip
 -pip install -r requirements.txt
 
 # 4. .env faylini yaratish (misol uchun)
@@ -27,7 +28,7 @@ alembic revision --autogenerate -m "Initial migration"
 alembic upgrade head
 
 # 7. Docker Compose build va run
-docker compose up --build -d   # -d detach mode
+docker compose up --build -d  
 
 # 8. Docker Compose to‘xtatish (kerak bo‘lsa)
 # docker compose down
