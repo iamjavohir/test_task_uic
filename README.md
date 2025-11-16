@@ -7,14 +7,17 @@ cd /path/to/your/project   # o'z loyihang papkasiga kirish
 
 # 2. Virtual environment yaratish va aktivlashtirish
 python3 -m venv .venv
-source .venv/bin/activate   # Windowsda: .venv\Scripts\activate
+source .venv/bin/activate   
+# Windowsda: .venv\Scripts\activate
 
 # 3. Pip yangilash va dependencies o‘rnatish
-pip install --upgrade pip
-pip install -r requirements.txt
+-pip install --upgrade pip
+-pip install -r requirements.txt
 
 # 4. .env faylini yaratish (misol uchun)
-cp .env.example .env        # Windows: copy .env.example .env
+cp .env.example .env        
+
+# Windows: copy .env.example .env
 
 # 5. Alembic papkasini yaratish va konfiguratsiya (faqat birinchi marta)
 alembic init alembic
